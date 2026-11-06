@@ -35,6 +35,14 @@
   "engines": {
     "node": ">=20"
   },
+  "scripts": {
+    "sync:dim": "node scripts/sync-dim.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "devDependencies": {
+    "@arcships/rutis": "0.19.3",
+    "linkedom": "^0.18.15"
+  },
   "bundleDependencies": [
     "openhongguo"
   ],

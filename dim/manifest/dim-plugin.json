@@ -1,0 +1,26 @@
+{
+  "name": "dim-hongguo",
+  "description": "摸鱼短剧：在 Dim 的会话面板中观看红果短剧",
+  "code": {
+    "entry": "backend.js",
+    "inject": ["partRegistry"]
+  },
+  "ui": {
+    "version": 1,
+    "root": "ui",
+    "panels": [{
+      "id": "player",
+      "title": { "default": "Drama Break", "translations": { "zh": "摸鱼短剧" } },
+      "icon": "icon.svg",
+      "entry": "panel.js",
+      "placement": "session-panel",
+      "requires": ["session.state", "resources"],
+      "methods": [
+        { "name": "session.hongguo.feed", "scope": "session" },
+        { "name": "session.hongguo.search", "scope": "session" },
+        { "name": "session.hongguo.series", "scope": "session" },
+        { "name": "session.hongguo.play", "scope": "session" }
+      ]
+    }]
+  }
+}

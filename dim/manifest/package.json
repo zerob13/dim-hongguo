@@ -1,0 +1,9 @@
+{
+  "name": "dim-hongguo",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@arcships/rutis": "0.19.3",
+    "openhongguo": "0.1.0"
+  }
+}
